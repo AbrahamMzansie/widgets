@@ -30,6 +30,7 @@ const Search = () => {
 
       setResults(data.query.search);
     };
+    if(debouncedTerm)
     search();
   }, [debouncedTerm]);
 
